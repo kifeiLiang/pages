@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>分页项目</title>
+<style>
+	.red{
+		color:red;
+	}
+	a{
+		/*width: 30px;*/
+		/*height: 30px;*/
+		/*background: #f2f2f2;*/
+		/*border: 1px solid #999;*/
+		/*border-radius:5px;*/
+		/*margin: 5px;*/
+		/*display: inline-block;*/
+		/*color:#999;*/
+		/*text-align: center;*/
+		/*line-height: 30px;*/
+		text-decoration:none;
+	}
+	/*.prev,.next{*/
+		/*width: 50px;*/
+	/*}*/
+	/*=====分页=====*/
+	.pages{
+		padding: 20px 0;
+		height:70px;
+		text-align: center;
+	}
+	.pagination {
+		font-size:0;
+	}
+	.pages a,li.disabled span {
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+	}
+	.pagination li {
+		display: inline-block;
+		vertical-align: top;
+		margin:0 5px;
+	}
+	li.disabled{
+		background:none;
+	}
+	li.disabled span{
+		display:block;
+		line-height:30px;
+	}
+	.pages a{
+		color:#fff;
+		display:block;
+		line-height:30px;
+		text-align: center;
+		margin: 0 auto;
+		background: #a7c520;
+		border-radius:5px;
+	}
+	.pages a:hover,.pages li.active a{
+		background:#dde9a7;
+		color:#817f7f;
+	}
+	.pages input.pagenum{
+		width:60px;
+		height:30px;
+		border:1px solid #a7c520;
+		background:#fff;
+		line-height:30px;
+		font-size: 13px;
+		text-align: center;
+	}
+	.pages .jump{
+		width: 50px;
+		height: 30px;
+		background:#a7c520;
+		border: none;
+		font-size: 13px;
+		color:#fff;
+		border-radius:5px
+	}
+
+</style>
+</head>
+<body>
+<div id="page" class="pages">
+	<ul class="pagination" id="pagination">
+	</ul>
+</div>
+<script src="pages.js"></script>
+</body>
+</html>
